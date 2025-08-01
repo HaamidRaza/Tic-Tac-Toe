@@ -1,0 +1,104 @@
+*{padding: 0px;
+    margin: 0px;}
+body{
+    background-color:rgb(180, 210, 186) ;
+    color: #B57F50;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    position: relative;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 8vmin;
+    color: lightcoral;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+.box:hover{
+    background-color:rgb(222, 222, 155) ;
+}
+
+#reset{
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    color:#B4D2BA   ;
+    background-color: #4B543B;
+    
+}
+#reset:hover{
+    background-color:#bfd19f ;
+    color: #4B543B;
+}
+#newBtn{
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color:#B4D2BA   ;
+    background-color: #4B543B;
+    cursor: pointer;   
+}
+
+#newBtn:hover{
+    background-color:darkseagreen;
+    color: #4B543B;
+}
+
+#msg{
+    color:cornflowerblue;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    transition: ease-in;
+}
+.hide{
+    display: none;
+}
+
+.box.hover-preview::after {
+  content: attr(data-preview);
+  color: lightcoral;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
